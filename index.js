@@ -17,6 +17,8 @@ collectDefaultMetrics()
     })
 }
 
+var apm = require('elastic-apm-node').start()
+
 app.get('/', function (req, res) {
     res.send('P R O M E T H E U S!')
 });
